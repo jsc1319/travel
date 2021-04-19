@@ -243,11 +243,11 @@ outline-offset: 0;
     background-color: white;
 }
 
-.benefits__card{
+.benefits__cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 55px;
-    padding: 100px;
+    column-gap: 55px;
+    padding: 0 100px;
 }
 
 .benefits__card{
