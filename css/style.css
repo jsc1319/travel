@@ -46,7 +46,11 @@ table {
     border-spacing: 0;
 }
 
-
+:focus {
+    outline-style: dotted;
+    outline-width: 1px !important;
+    outline-color: white !important;
+}
 /* lato-regular - latin */
 @font-face {
     font-family: 'Lato';
@@ -164,7 +168,7 @@ body{
     flex-wrap: wrap;
 }
 
-.searck-form__field{
+.search-form__field{
     width: 297px;
     background: transparent url(../img/svg/circle-icon.svg) no-repeat left 6px;
     background-size: 20px;
@@ -178,7 +182,7 @@ body{
     color: white;
 }
 
-.searck-form__field::placeholder{
+.search-form__field::placeholder{
     font-weight: 500;
     font-size: 18px;
     color: white;
@@ -192,8 +196,15 @@ body{
     color: white;
     background-color: #1B7DFF;
     border: 0;
+    cursor: pointer;
 }
 
 .search-form__submit:hover, .search-form__submit:focus, .search-form__submit:active{
     background: #0e66da;
 }
+
+.search-form__field:focus{ /* Нет обводки при фокусе тектового поля */
+outline: 0;
+outline-offset: 0;
+}
+
