@@ -436,7 +436,7 @@ body{
 
 .section-title::after{
     display: block;
-    content: "";
+    content: '';
     width: 253px;
     height: 3px;
     background-color: #006DFE;
@@ -450,6 +450,13 @@ body{
     top: 0;
     left: 0;
     width: 100%;
+    transition: .2s linear;
+    padding-bottom: 20px;
+    z-index: 999;
+}
+
+.header_active{
+    background: #0E1D28;
 }
 
 .header_wrapper{
@@ -870,3 +877,5 @@ outline-offset: 0;
     background: #0e66da; 
 }
 /* Top places styles end */
+
+/* start */
