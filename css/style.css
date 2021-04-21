@@ -398,7 +398,7 @@ textarea {
 html{
     box-sizing: border-box;
 }
-*, *::after{
+*, *::before, *::after{
     box-sizing: inherit;
 }
 
@@ -411,7 +411,7 @@ body{
     color: #102746;
 }
 
-.img{
+img{
     max-width: 100%;
     height: auto;
 }
@@ -424,6 +424,7 @@ body{
 .wrapper-full{
     max-width: 1262px;
     margin: 0 auto;
+
 }
 
 .section-title{
@@ -455,11 +456,11 @@ body{
     z-index: 999;
 }
 
-.header_active{
+.header__active{
     background: #0E1D28;
 }
 
-.header_wrapper{
+.header__wrapper{
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
@@ -467,20 +468,20 @@ body{
     padding-top: 56px;
 }
 
-.header_list{
+.header__list{
     display: flex;
     flex-wrap: wrap;
 }
 
-.header_item{
+.header__item{
     margin-right: 82px;
 }
 
-.header_item:last-child{
+.header__item:last-child{
     margin-right: 0;
 }
 
-.header_link{
+.header__link{
     font-size: 18px;
     line-height: 24px;
     color: white;
