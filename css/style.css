@@ -994,7 +994,10 @@ outline-offset: 0;
         z-index: 10;
         padding: 75px;
         transform: translateX(100%);
-
+        transition: 0.2s all linear;
+    }
+    .header__nav_active{
+        transform: translateX(0);
     }
     .header__item{
         width: 100%;
